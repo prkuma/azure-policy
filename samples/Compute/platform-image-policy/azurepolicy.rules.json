@@ -1,39 +1,39 @@
 {
-	"if": {
-		"allOf": [
-			{
-				"not": {
-					"allOf": [
-						{
-							"field": "Microsoft.Compute/imagePublisher",
-							"in": [
-								"imagePublisher"
-							]
-						},
-						{
-							"field": "Microsoft.Compute/imageOffer",
-							"in": [
-								"imageOffer"
-							]
-						},
-						{
-							"field": "Microsoft.Compute/imageSku",
-							"in": [
-								"imageSku"
-							]
-						},
-						{
-							"field": "Microsoft.Compute/imageVersion",
-							"in": [
-								"imageVersion"
-							]
-						}
-					]
-				}
-			}
-		]
-	},
-	"then": {
-		"effect": "deny"
-	}
+    "if": {
+        "allOf": [
+            {
+                "not": {
+                    "allOf": [
+                        {
+                            "field": "Microsoft.Compute/imagePublisher",
+                            "in": [
+                                "imagePublisher"
+                            ]
+                        },
+                        {
+                            "field": "Microsoft.Compute/imageOffer",
+                            "in": [
+                                "imageOffer"
+                            ]
+                        },
+                        {
+                            "field": "Microsoft.Compute/imageSku",
+                            "in": [
+                                "imageSku"
+                            ]
+                        },
+                        {
+                            "field": "Microsoft.Compute/imageVersion",
+                            "in": [
+                                "imageVersion"
+                            ]
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "then": {
+        "effect": "deny"
+    }
 }

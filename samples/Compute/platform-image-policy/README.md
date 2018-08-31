@@ -15,8 +15,6 @@ $assignment = New-AzureRMPolicyAssignment -Name <assignmentname> -Scope <scope> 
 $assignment 
 ````
 
-
-
 ## Try with CLI
 
 ````cli
