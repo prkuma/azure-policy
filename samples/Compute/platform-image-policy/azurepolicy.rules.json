@@ -2,38 +2,30 @@
 	"if": {
 		"allOf": [
 			{
-				"field": "type",
-				"in": [
-					"Microsoft.Compute/disks",
-					"Microsoft.Compute/virtualMachines",
-					"Microsoft.Compute/VirtualMachineScaleSets"
-				]
-			},
-			{
 				"not": {
 					"allOf": [
 						{
 							"field": "Microsoft.Compute/imagePublisher",
 							"in": [
-								"Canonical"
+								"imagePublisher"
 							]
 						},
 						{
 							"field": "Microsoft.Compute/imageOffer",
 							"in": [
-								"UbuntuServer"
+								"imageOffer"
 							]
 						},
 						{
 							"field": "Microsoft.Compute/imageSku",
 							"in": [
-								"14.04.2-LTS"
+								"imageSku"
 							]
 						},
 						{
 							"field": "Microsoft.Compute/imageVersion",
 							"in": [
-								"latest"
+								"imageVersion"
 							]
 						}
 					]
